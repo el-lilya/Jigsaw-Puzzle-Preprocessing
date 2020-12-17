@@ -1,0 +1,151 @@
+<link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400' rel='stylesheet' type='text/css'>
+<style>
+    @font-face {
+        font-family: "Computer Modern";
+        src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+    }
+    div.container{
+		/*background-image: linear-gradient(to bottom right, #FFFFFF, #FF77CC, #8B00FE, #0033CC);*/
+    }
+    
+    div #notebook{
+		background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+		background-size: 400% 400%;
+		animation: gradient 15s ease infinite;
+    }
+    
+    @keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+	
+    div.cell{
+        /*width:80%;
+        margin-left:auto !important;
+        margin-right:auto;
+        background-image: linear-gradient(to bottom right, #FFFFFF, #FF77CC, #8B00FE, #0033CC);*/
+    }
+    h1 {
+        font-family: 'Alegreya Sans', sans-serif;
+    }
+    h2 {
+        font-family: 'Fenix', serif;
+    }
+    h3{
+		font-family: 'Fenix', serif;
+        margin-top:12px;
+        margin-bottom: 3px;
+       }
+	h4{
+		font-family: 'Fenix', serif;
+       }
+    h5 {
+        font-family: 'Alegreya Sans', sans-serif;
+    }	   
+    div.text_cell_render{
+        font-family: 'Alegreya Sans', Computer Modern, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+        line-height: 1.5;
+        font-size: 120%;
+        /*width:70%;*/
+        /*margin-left:auto;
+        background-image: linear-gradient(to bottom right, #FFFFFF, #FF77CC, #8B00FE, #0033CC);*/
+        margin-right:auto;
+        color: #fff;
+        text-align: center;
+        
+    }
+    img.center{
+		display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+    }
+    .CodeMirror{
+            font-family: "Source Code Pro";
+			font-size: 90%;
+			background-color: #fff;
+    }
+/*    .prompt{
+        display: None;
+    }*/
+    .text_cell_render h1 {
+        font-weight: 300;
+        font-size: 100pt;
+		line-height: 110%;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        display: block;
+        color: #fff;
+    }	
+    .text_cell_render h2 {
+        font-weight: 300;
+        font-size: 70pt;
+		line-height: 110%;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        display: block;
+        text-align: left;
+        color: #fff;
+    }	
+    .text_cell_render h3 {
+        font-weight: 300;
+        font-size: 50pt;
+		line-height: 110%;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        display: block;
+        text-align: left;
+        color: #fff;
+    }
+    .text_cell_render h4 {
+        font-weight: 300;
+        font-size: 30pt;
+		line-height: 110%;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        display: block;
+        text-align: left;
+        color: #fff;
+    }	
+    .text_cell_render h5 {
+        font-weight: 300;
+        font-size: 16pt;
+        color: #CD2305;
+        font-style: italic;
+        margin-bottom: .5em;
+        margin-top: 0.5em;
+        display: block;
+    }
+    
+    li {
+        line-height: 110%;
+    }
+    .warning{
+        color: rgb( 240, 20, 20 )
+        }  
+
+</style>
+
+<script>
+    MathJax.Hub.Config({
+                        TeX: {
+                           extensions: ["AMSmath.js"]
+                           },
+                tex2jax: {
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+                },
+                displayAlign: 'center', // Change this to 'center' to center equations.
+                "HTML-CSS": {
+                    styles: {'.MathJax_Display': {"margin": 4}}
+                }
+        });
+</script>
